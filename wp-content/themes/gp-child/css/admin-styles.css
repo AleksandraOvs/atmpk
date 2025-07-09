@@ -1,0 +1,138 @@
+:root {
+    --black: #332233;
+    --dark: #5d5d5d;
+    --accent: #20BFDA;
+    --accent-light: #E8F6F9;
+    --light-grey: rgb(243, 243, 243);
+}
+
+* {
+    font-family: 'Manrope', sans-serif;
+    color: var(--black);
+}
+
+html :where(.wp-block) {
+    margin-bottom: 28px;
+    margin-top: 28px;
+    max-width: 90%;
+}
+
+h1.wp-block-post-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    line-height: 1;
+    font-size: 38px;
+}
+
+h1.wp-block-post-title:before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    display: block;
+    background: var(--accent);
+    border-radius: 2px;
+    transform: translateY(2px);
+}
+
+h2.wp-block-heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+h2.wp-block-heading:before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    display: block;
+    background: var(--accent);
+    border-radius: 2px;
+    transform: translateY(2px);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.has-background.wp-block-separator {
+    width: 100px;
+    margin: 0;
+}
+
+.wp-block-columns .wp-block {
+    border: 1px dotted var(--black);
+}
+
+.wp-block-spacer {
+    position: relative;
+    background: #d7d7d7;
+    height: 40px;
+}
+
+figure.wp-block-pullquote {
+    font-size: 16px;
+    margin: 30px 0;
+    background: var(--light-grey);
+    padding: 20px;
+    border-left: 3px solid var(--green);
+}
+
+.wp-block-cover__inner-container p.block-editor-rich-text__editable {
+    color: #fff;
+}
+
+.wp-block-cover .wp-block-cover__inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wp-block-pullquote blockquote p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wp-block-pullquote blockquote cite {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* 
+.wp-block-spacer{
+    height:60px;
+    background:rgba(185, 235, 138, .3);
+} */
+
+.wp-block-spacer:after {
+    content: 'spacer';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+}
+
+blockquote.wp-block-quote {
+    border-left: 3px solid var(--accent);
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 0 1.5em;
+    position: relative;
+    background: var(--light-grey);
+}
+
+body .wp-block-quote:not(.is-large):not(.is-style-large){
+     border-left: 3px solid var(--accent);
+}
