@@ -1124,6 +1124,10 @@ aside.widget h2.wp-block-heading {
   text-decoration: none;
 }
 
+footer .inside-site-info.grid-container {
+  display: none;
+}
+
 @media (max-width: 1200px) {
 
   .woocommerce ul.products li.product,
