@@ -20,11 +20,8 @@ function site_carbon()
         ))
 
         ->add_tab(__('Форма обратной связи'), array(
-            Field::make('rich_text', 'crb_contact_form_head', 'Заголовок')
-                ->set_width(33),
-            Field::make('rich_text', 'crb_contact_form_desc', 'Подзаголовок')
-                ->set_width(33),
             Field::make('text', 'crb_contact_form_shortcode', 'Шорткод')
+            ->help_text('Форма отображается в блоке категорий на главной странице')
                 ->set_width(33),
         ));
 
@@ -33,7 +30,7 @@ function site_carbon()
         ->set_icon('dashicons-admin-comments')
         ->add_tab(__('Слайдер первого экрана'), array(
 
-            Field::make('complex', 'crb_hero_slider', 'Сдайды')
+            Field::make('complex', 'crb_hero_slider', 'Слайды')
                 ->add_fields(array(
                     Field::make('image', 'crb_hero_slide_image', 'Изображение слайда')
                         ->set_width(33),
@@ -50,6 +47,7 @@ function site_carbon()
 
         ->add_tab(__('Контактная форма'), array(
             Field::make('text', 'crb_contact_shortcode', 'Шорткод')
+            
         ))
 
         ->add_tab(__('Этапы'), array(

@@ -41,3 +41,6 @@ require 'inc/current-temp.php';
 require 'inc/carbon-fields.php';
 require 'inc/woo.php';
 
+
+// Contact Form 7 remove auto added p tags
+add_filter('wpcf7_autop_or_not', '__return_false');

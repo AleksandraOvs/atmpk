@@ -27,9 +27,9 @@ $attribute_label = implode(' / ', $attribute_labels); // если их неск�
 	<div class="variation-tabs">
 
 		<!-- Название атрибута и вкладки в одном блоке -->
-		<div class="variation-tabs-header" style="margin-bottom: 10px;">
+		<div class="variation-tabs-header">
 			<div class="variation-tabs-header__name">
-				<h3 class="variation-attribute-label" style="display: block; margin-bottom: 5px;"><?php echo esc_html($attribute_label); ?></h3>
+				<h3 class="variation-attribute-label"><?php echo esc_html($attribute_label); ?></h3>
 			</div>
 			<ul class="tabs" style="margin: 0; padding: 0; list-style: none;">
 				<?php foreach ($available_variations as $index => $variation) :

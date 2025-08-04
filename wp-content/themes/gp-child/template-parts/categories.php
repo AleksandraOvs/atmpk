@@ -38,6 +38,12 @@
                 echo '</a>';
                 echo '</li>';
             }
+
+            if ($consult_form = carbon_get_theme_option('crb_contact_form_shortcode')) {
+                echo '<li class="product-category__form">';
+                echo do_shortcode(" $consult_form ");
+                echo '</li>';
+            }
             echo '</ul>';
         }
 
